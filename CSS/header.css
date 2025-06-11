@@ -1,0 +1,37 @@
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #865139; /* Background color for header */
+  position: relative; /* Ensures that the header remains on top */
+  z-index: 10;
+}
+
+.logo img {
+  height: 50px; /* Adjust the size of the logo */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav ul li a:hover {
+  color: #46330d;
+}
+
+
