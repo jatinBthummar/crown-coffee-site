@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Crown Coffee</title>
+  <link rel="stylesheet" href="CSS/cart.css">
+  <link rel="stylesheet" href="CSS/header.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html">
+          <img src="images/logo.png" alt="Crown Coffee Logo">
+        </a>
+        </div>
+    
+        <!-- Navigation Links -->
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+
+  <section class="shop-products" id="cart-section">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Items in Your Cart</h2>
+    <div class="products" id="cart-items">
+      <!-- JS will inject cart items here -->
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <h3 id="total-price">Total: $0.00</h3>
+      <a href="#" class="btn">Proceed to Checkout</a>
+    </div>
+  </section>
+
+  <script src="JS/cart.js"></script>
+</body>
+</html>

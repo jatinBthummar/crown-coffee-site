@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shop - Crown Coffee</title>
-  <link rel="stylesheet" href="CSS/shop.css">
-  <link rel="stylesheet" href="CSS/header.css">
-
+  <link rel="stylesheet" href="CSS/shop.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
 </head>
 <body>
-
   <!-- Header -->
   <header class="header">
-    <!-- Logo Section -->
     <div class="logo">
       <a href="index.html">
-      <img src="images/logo.png" alt="Crown Coffee Logo">
-    </a>
+        <img src="images/logo.png" alt="Crown Coffee Logo" />
+      </a>
     </div>
 
-    <!-- Navigation Links -->
     <nav class="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  
   <!-- Product Categories -->
   <section class="product-categories">
     <h2>Browse by Category</h2>
@@ -45,42 +41,68 @@
   <!-- Product Listings -->
   <section class="shop-products">
     <div class="products">
-      <div class="product-card" data-category="light">
-        <img src="images/light1.png" alt="Light Roast Coffee 1">
+      <div class="product-card" data-category="light" data-id="1">
+        <img src="images/light1.jpg" alt="Light Roast Coffee 1" />
         <h3>Light Roast Coffee</h3>
         <p>$18</p>
-        <button onclick="addToCart('Light Roast Coffee', 18)">Add to Cart</button>
+        <button onclick="addToCart('Light Roast Coffee', 18, 'images/light1.png', 1)">Add to Cart</button>
       </div>
-      <div class="product-card" data-category="medium">
-        <img src="images/medium1.jpg" alt="Medium Roast Coffee 1">
+
+      <div class="product-card" data-category="medium" data-id="2">
+        <img src="images/medium1.jpg" alt="Medium Roast Coffee 1" />
         <h3>Medium Roast Coffee</h3>
         <p>$22</p>
-        <button onclick="addToCart('Medium Roast Coffee', 22)">Add to Cart</button>
+        <button onclick="addToCart('Medium Roast Coffee', 22, 'images/medium1.jpg', 2)">Add to Cart</button>
       </div>
-      <div class="product-card" data-category="dark">
-        <img src="images/dark1.jpg" alt="Dark Roast Coffee 1">
+
+      <div class="product-card" data-category="dark" data-id="3">
+        <img src="images/dark1.jpg" alt="Dark Roast Coffee 1" />
         <h3>Dark Roast Coffee</h3>
         <p>$25</p>
-        <button onclick="addToCart('Dark Roast Coffee', 25)">Add to Cart</button>
+        <button onclick="addToCart('Dark Roast Coffee', 25, 'images/dark1.jpg', 3)">Add to Cart</button>
       </div>
-      <!-- Additional products -->
-      <div class="product-card" data-category="light">
-        <img src="images/light2.jpg" alt="Light Roast Coffee 2">
+
+      <div class="product-card" data-category="light" data-id="4">
+        <img src="images/light2.jpg" alt="Light Roast Coffee 2" />
         <h3>Light Roast Coffee</h3>
         <p>$20</p>
-        <button onclick="addToCart('Light Roast Coffee', 20)">Add to Cart</button>
+        <button onclick="addToCart('Light Roast Coffee', 20, 'images/light2.jpg', 4)">Add to Cart</button>
       </div>
-      <div class="product-card" data-category="medium">
-        <img src="images/medium2.jpg" alt="Medium Roast Coffee 2">
+
+      <div class="product-card" data-category="medium" data-id="5">
+        <img src="images/medium2.jpg" alt="Medium Roast Coffee 2" />
         <h3>Medium Roast Coffee</h3>
         <p>$23</p>
-        <button onclick="addToCart('Medium Roast Coffee', 23)">Add to Cart</button>
+        <button onclick="addToCart('Medium Roast Coffee', 23, 'images/medium2.jpg', 5)">Add to Cart</button>
       </div>
-      <div class="product-card" data-category="dark">
-        <img src="images/dark2.jpg" alt="Dark Roast Coffee 2">
+
+      <div class="product-card" data-category="dark" data-id="6">
+        <img src="images/dark2.jpg" alt="Dark Roast Coffee 2" />
         <h3>Dark Roast Coffee</h3>
         <p>$27</p>
-        <button onclick="addToCart('Dark Roast Coffee', 27)">Add to Cart</button>
+        <button onclick="addToCart('Dark Roast Coffee', 27, 'images/dark2.jpg', 6)">Add to Cart</button>
+      </div>
+
+      <!-- Additional products -->
+      <div class="product-card" data-category="light" data-id="7">
+        <img src="images/light3.jpg" alt="Light Roast Coffee 3" />
+        <h3>Light Roast Coffee</h3>
+        <p>$21</p>
+        <button onclick="addToCart('Light Roast Coffee', 21, 'images/light3.jpg', 7)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="medium" data-id="8">
+        <img src="images/medium3.jpg" alt="Medium Roast Coffee 3" />
+        <h3>Medium Roast Coffee</h3>
+        <p>$24</p>
+        <button onclick="addToCart('Medium Roast Coffee', 24, 'images/medium3.jpg', 8)">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="dark" data-id="9">
+        <img src="images/dark3.jpg" alt="Dark Roast Coffee 3" />
+        <h3>Dark Roast Coffee</h3>
+        <p>$28</p>
+        <button onclick="addToCart('Dark Roast Coffee', 28, 'images/dark3.jpg', 9)">Add to Cart</button>
       </div>
     </div>
   </section>
@@ -92,6 +114,36 @@
     </div>
   </footer>
 
-  <script src="cart.js"></script>
+  <script>
+    // Filter products by category
+    function filterCategory(category) {
+      const products = document.querySelectorAll('.product-card');
+      products.forEach(product => {
+        if (category === 'all' || product.dataset.category === category) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+
+    // Add to Cart function
+    function addToCart(name, price, image, id) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      const existing = cart.find(item => item.id === id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ id, name, price, image, quantity: 1 });
+      }
+
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(`${name} added to cart!`);
+
+      // Redirect to cart page
+      window.location.href = "cart.html";
+    }
+  </script>
 </body>
 </html>
