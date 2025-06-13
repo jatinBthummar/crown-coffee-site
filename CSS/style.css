@@ -1,0 +1,50 @@
+.admin-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  background-color: #5c3d2e;
+  gap: 1rem;
+}
+.admin-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.admin-nav ul li a:hover {
+  background-color: #442d1f;
+  border-radius: 5px;
+}
+.dashboard {
+  padding: 2rem;
+}
+.admin-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.review-box {
+  background: #f5f5f5;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #5c3d2e;
+}
+
+
+.admin-section {
+  padding: 2rem;
+}
+.admin-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.admin-section th {
+  background-color: #5c3d2e;
+  color: white;
+}
+.admin-section td, th {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+}
+.admin-section .btn {
+  margin-bottom: 1rem;
+}
