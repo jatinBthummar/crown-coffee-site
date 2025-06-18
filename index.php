@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crown Coffee | Brewing Comfort</title>
+  <link rel="stylesheet" href="CSS/user_pannel.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <!-- Logo Section -->
+    <div class="logo">
+      <a href="index.php">
+      <img src="images/logo.png" alt="Crown Coffee Logo">
+    </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav">
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="shop.php">Shop</a></li>
+        <li><a href="cart.php">Cart</a></li>
+        <li><a href="blog.php">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Brewing<br><span>Comfort, One Cup at a Time</span></h2>
+      <p>Whether you're here for your morning pick-me-up or a cozy afternoon retreat, we serve rich coffee, fresh pastries, and a warm atmosphere.</p>
+      <a href="shop.php" class="btn">Shop Now</a>
+    </div>
+    <img src="images/hero-image.jpg" alt="Crown Coffee Hero Image" class="hero-img">
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="featured-products" id="products">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="images/coffee1.png" alt="Dark Coffee">
+        <h3>Dark Coffee</h3>
+        <p>$56</p>
+      </div>
+      <div class="product-card">
+        <img src="images/coffee2.png" alt="Dark Coffee">
+        <h3>Dark Coffee</h3>
+        <p>$46</p>
+      </div>
+      <div class="product-card">
+        <img src="images/coffee3.png" alt="Dark Coffee">
+        <h3>Dark Coffee</h3>
+        <p>$50</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category + Blog Section -->
+  <section class="categories-blog">
+  <div class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-buttons">
+      <a href="shop.php">
+        <button>Light Roast</button>
+      </a>
+      <a href="shop.php">
+        <button>Medium Roast</button>
+      </a>
+      <a href="shop.php">
+        <button>Dark Roast</button>
+      </a>
+      <a href="shop.php">
+        <button>Espresso</button>
+      </a>
+    </div>
+  </div>
+
+      <div class="home_blog">
+        <h2>Blog</h2>
+        <div class="home_blog_card">
+          <img src="images/blog.jpg" alt="Blog Image">
+          <p>Crown Coffee stands out due to its commitment to quality, ethical sourcing, and a focus on supporting brain cancer research</p>
+          <a href="blog.php" class="btn">Read More</a>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Why Crown Coffee Section -->
+  <section class="why-crown">
+    <h2>Why Crown Coffee?</h2>
+    <p>★★★★★</p>
+    <p>Crown Coffee gives our customers the freedom to choose from a variety of coffees. Crown Coffee quotes our customers one price and lets you choose, 
+      this allows companies to carry a medium roast and dark roast pleasing a broad range and again your costs stay the same.</p>
+  </section>
+
+  <!-- Contact / Location Section -->
+  <footer class="footer">
+    <div class="location-info">
+      <h3>Location</h3>
+      <p><strong>Address:</strong> 305 King St W, Kitchener, ON N2G 1B7</p>
+      <p><strong>Phone:</strong> (519) 954-7705</p>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=305+King+St+W,+Kitchener,+ON+N2G+1B7&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <p>Copyright © 2025 – Coffee Shop</p>
+  </div>
+
+</body>
+</html>
